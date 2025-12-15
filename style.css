@@ -1,0 +1,28 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #e8e8e8;
+}
+
+/* 버튼 같은 UI가 있다면 눌리도록 body는 auto */
+body {
+  touch-action: auto;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+}
+
+/* 스크롤/줌 방지는 캔버스에만 */
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  touch-action: none;
+}
